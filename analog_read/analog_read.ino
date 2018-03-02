@@ -23,6 +23,8 @@ void loop() {
   analogWrite(13, scale_value);
 
   // print out the value you read:
+  Serial.print(raw_value);
+  Serial.print(" ");
   Serial.println(scale_value);
   delay(1);        // delay in between reads for stability
 }
